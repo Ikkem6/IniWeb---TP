@@ -1,0 +1,133 @@
+/*******************************************************************************
+*
+* Nom : tphtml.css
+* Date et auteur :
+*       Créé le 23/09/2026 par Mekki COPRAK
+*
+* Description :
+*       Fichier CSS "style.css" du TP2 initiation au langage développement Web
+*
+*******************************************************************************/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+header {
+    background-color: dimgray;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.2em;
+    margin: 10px;
+    padding: 10px;
+}
+
+footer{
+    background-color: dimgray;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+section{
+    margin: 10px;
+}
+
+article {
+    margin: 10px;
+    padding: 10px;
+    border: 2px dotted grey;
+}
+
+p {
+    margin: 10px;
+}
+
+h1 {
+    margin: 10px;
+    text-align: center;
+    color : red;
+    font-size: 2em;
+    font-variant: small-caps;
+}
+
+h2 {
+    padding: 10px;
+    background-color: red;
+    border-left: 50px solid black;
+    text-transform: capitalize;
+}
+
+#info {
+    width: 600px;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 2em;
+    padding: 10px;
+    margin: auto; /* Calcule automatiquement la marge horizontale pour une marge verticale donnée */
+}
+
+.documentation {
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+.documentation a {
+    text-decoration: none;
+    background-color: darkgreen;
+    color: yellowgreen;
+    margin: 5px;
+}
+
+.documentation a:hover{
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+.code{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightgrey;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+pre {
+    margin: 10px;
+    padding: 10px;
+}
+
+table {
+    width: 60%;
+    margin: auto; /* Calcule automatiquement la marge verticale pour une marge horizontale donnée */
+}
+
+tr {
+    height: 2em;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+    height: 3em;
+}
+
+th, td {
+    border: 1px solid grey;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: lightblue;
+}
+
+tr:last-child{
+    color: blue
+}
