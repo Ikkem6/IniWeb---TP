@@ -1,12 +1,12 @@
-<!--
+﻿<!--
 *******************************************************************************
 *
-* Nom : styles_illustration.html
+* Nom : js_ampoule
 * Date et auteur :
-*       Créé le 23/09/2026 par Mekki COPRAK
+*       Créé le 30/09/2026 par Mekki COPRAK
 *
 * Description :
-*       Fichier HTML "styles_illustration.html" du TP2 initiation au langage développement Web
+*       Fichier HTML "js_ampoule.html" du TP3 initiation au langage développement Web
 *
 *******************************************************************************
 -->
@@ -18,6 +18,21 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="tphtml.css">
+	<script>
+		function OnOffAmpoule()
+		{
+			var image = document.getElementById("MonImage");
+ 
+			if (image.src.search("pic_bulboff") != -1)
+			{
+				image.src = "images/pic_bulbon.gif";
+			}
+			else
+			{
+				image.src = "images/pic_bulboff.gif";
+			}
+		}
+	</script>
 </head>
 
 <body>
@@ -31,16 +46,20 @@
 			<a href="bases.html">Les bases du langage HTML</a>
 			<a href="tableau.html">Les tableaux</a>
 			<a href="styles_exercices.html">Les styles CSS : exercices</a>
-			<a href="styles_illustration.html" class="clic">Les styles CSS : illustration</a>
+			<a href="styles_illustration.html">Les styles CSS : illustration</a>
 			<a href="js_exercices.html">Javascript : exercices</a>
-			<a href="js_ampoule.html">Javascript : l'ampoule</a>
+			<a href="js_ampoule.html" class="clic">Javascript : l'ampoule</a>
 			<a href="js_planets.html">Javascript : planètes</a>
 		</nav>
 			
-		<article>
-            
-            <iframe src="styles_illustration/stylesheet1.html" width="100%" height=800px></iframe>
+		<article style="text-align:center">
 
+			<h1>Allumer ou éteindre l'ampoule</h1>
+			
+			<img id="MonImage" src="images/pic_bulboff.gif" style="width:100px" onclick="OnOffAmpoule()">
+
+			<p style="text-align:center">Cliquer sur l'ampoule !</p>
+					
 		</article>
 	</div>
 	
